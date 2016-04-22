@@ -1,0 +1,22 @@
+{
+  "name": "image-proxy",
+  "version": "0.0.1",
+  "description": "image dump from wechat to private serve",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/index.js"
+  },
+  "keywords": [
+    "image",
+    "dump",
+    "wechat"
+  ],
+  "author": "luofeng",
+  "license": "ISC",
+  "dependencies": {
+    "mime": "^1.3.4",
+    "mongodb": "^2.1.16",
+    "request": "^2.72.0",
+    "uuid": "^2.0.2"
+  }
+}

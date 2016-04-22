@@ -1,0 +1,1 @@
+当访问微信素材中的图像时(URL),替换url为[this Context]/service/image?url=URL;
