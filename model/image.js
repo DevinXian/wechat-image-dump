@@ -17,7 +17,7 @@ function Image(_id, media_id, url, extention, update_time) {
 	this.update_time = update_time;
 }
 
-Image.prototype.insert = () => {
+Image.prototype.insert = function () {
 	const self = this;
 	//params check ignore...
 	return new Promise(function (resolve, reject) {
