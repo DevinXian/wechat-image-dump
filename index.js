@@ -3,14 +3,13 @@
 const fs = require('fs');
 const URL = require('url');
 const http = require('http');
+const mkdirp = require('mkdirp');
 const config = require('./config');
 const ImageService = require('./service/image');
 
-(function init() {
-	fs.exists(config.path, exists => {
-		if (!exists) fs.mkdir(config.path);
-	});
-})();
+mkdirp(config.path, err => {
+	if(err) console.error(err);
+});
 
 http.createServer(function (req, res) {
 
